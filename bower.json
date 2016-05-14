@@ -1,0 +1,7 @@
+{
+  "name": "d3-playground",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1"
+  }
+}
