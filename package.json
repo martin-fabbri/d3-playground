@@ -25,6 +25,8 @@
     "gulp-uglify": "^1.1.0",
     "gulp-useref": "^3.0.0",
     "main-bower-files": "^2.5.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1",
     "wiredep": "^2.2.2"
   },
   "eslintConfig": {
@@ -38,6 +40,16 @@
         2,
         "single"
       ]
+    }
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "jspm": "^0.16.34"
+  },
+  "jspm": {
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
     }
   }
 }

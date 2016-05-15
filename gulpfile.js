@@ -95,16 +95,20 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['.tmp', 'app'],
+      baseDir: ['projects'],
       routes: {
-        '/bower_components': 'bower_components'
-      }
+        '/bower_components': 'bower_components',
+        '/node_modules': 'node_modules'
+      },
+      directory: true
     }
   });
 
   gulp.watch([
-    'app/*.html',
-    'app/images/**/*',
+    'projects/**/*.html',
+    'projects/**/*.js',
+    'projects/**/*.css',
+    'projects/**/images//*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
